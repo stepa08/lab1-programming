@@ -1,10 +1,14 @@
 #include <iostream>
-#include <string>
+
+// Функция вычисления квадрата числа
+auto square(int x) -> int { return x * x; }
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    std::string name = "Никифоров Степан";
-    std::cout << "Студент:" << name << std::endl;
-    std::cout << "Дата: 2026-09-10" << std::endl;
+    // Униформ-инициализация
+    auto number{7};
+    // Вызов функции
+    auto result = square(number);
+    std::cout << "Число:" << number << std::endl;
+    std::cout << "Квадрат:" << result << std::endl;
     return 0;
 }
